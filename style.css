@@ -10,7 +10,14 @@
 
 body {
     background-color: black;
-    padding: 11.6rem 16rem;
+    padding: 8.6rem 16rem 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+    visibility: hidden;
+    position: absolute;
 }
 
 nav {
@@ -19,8 +26,16 @@ nav {
     justify-content: space-between;
 }
 
+nav form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav input {
     background-color: #06181C;
+    color: white;
+
     width: 46rem;
     height: 4.8rem;
     border: 0;
@@ -29,11 +44,91 @@ nav input {
     margin-right: .8rem;
 }
 
+input::placeholder {
+    color: #7C7C8A;
+}
+
 nav button {
     color: white;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+
     background-color: #065E7C;
 
     border-radius: 5px;
     cursor: pointer;
     padding: 1.2rem 3.2rem;
+    
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    justify-content: center;
+
+    transition: all .3s;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #065E7C;
+}
+
+svg path {
+    transition: all .3s;
+}
+
+nav button:hover svg path {
+    fill: #065E7C;
+}
+
+.favorites {
+    margin-top: 8.7rem;
+    height: 68.8rem;
+    
+    border: 1px solid #4A808C;
+    border-radius: 1.2rem;
+}
+
+.favorites span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 25rem;
+}
+
+.favorites span img {
+    width: 13.2rem;
+    height: 12.5rem;
+}
+
+.favorites span p {
+    color: #4E5455;
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 2.5rem;
+}
+
+table {
+    color: #E1E1E6;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 160%;
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    padding: 1.5rem 4rem;
+    background: #092D38;
+}
+
+table th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+    border-top-right-radius: 1.2rem;
 }
