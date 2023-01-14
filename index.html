@@ -31,10 +31,6 @@
     </nav>
 
     <div class="favorites">
-        <span class="hide">
-            <img src="./assets/noFav.svg" alt="Estrela chocada">
-            <p>Nenhum favorito ainda</p>
-        </span>
         
         <table>
             <thead>
@@ -46,12 +42,36 @@
                 </tr>
             </thead>
     
-            <tbody></tbody>
+            <tbody>
+                <td class="user">
+                    <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
+                    <a href="https://github.com/maykbrito" target="_blank">
+                        <p>Mayk Brito</p>
+                        <span>/maykbrito</span>
+                    </a>
+                </td>
+                <td class="repositories">
+                    76
+                </td>
+                <td class="followers">
+                    9589
+                </td>
+                <td>
+                    <button class="remove">Remover</button>
+                </td>
+                
+            </tbody>
     
             <tfoot>
     
             </tfoot>
         </table>
+
+        <span class="noFav hide">
+            <img src="./assets/noFav.svg" alt="Estrela chocada">
+            <p>Nenhum favorito ainda</p>
+        </span>
+
     </div>
 
 </body>

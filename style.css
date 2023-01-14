@@ -10,7 +10,7 @@
 
 body {
     background-color: black;
-    padding: 8.6rem 16rem 0;
+    padding: 8.6rem 20rem 0;
 
     font-family: 'Roboto', sans-serif;
 }
@@ -87,9 +87,11 @@ nav button:hover svg path {
     
     border: 1px solid #4A808C;
     border-radius: 1.2rem;
+
+    background-color: rgb(13, 17, 19);
 }
 
-.favorites span {
+.favorites .noFav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,12 +99,12 @@ nav button:hover svg path {
     margin-top: 25rem;
 }
 
-.favorites span img {
+.favorites .noFav img {
     width: 13.2rem;
     height: 12.5rem;
 }
 
-.favorites span p {
+.favorites .noFav p {
     color: #4E5455;
     font-weight: 700;
     font-size: 4.0rem;
@@ -117,6 +119,7 @@ table {
 
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 table th {
@@ -131,4 +134,54 @@ table th:first-child {
 
 table th:last-child {
     border-top-right-radius: 1.2rem;
+}
+
+table tr {
+    background: #06181C;
+}
+
+table tr:nth-child(odd) {  /* impares(odd) */
+    background: #121518;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+    height: 12rem;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+    color: #E1E1E6;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td.user a span {
+    font-weight: normal;
+}
+
+td .remove {
+    background: none;
+    border: none;
+
+    color: #F75A68;
+
+    cursor: pointer;
 }
