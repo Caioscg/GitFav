@@ -26,7 +26,7 @@ nav {
     justify-content: space-between;
 }
 
-nav form {
+nav .search {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +83,7 @@ nav button:hover svg path {
 
 .favorites {
     margin-top: 8.7rem;
-    height: 68.8rem;
+    height: 67rem;
     
     border: 1px solid #4A808C;
     border-radius: 1.2rem;
@@ -91,7 +91,7 @@ nav button:hover svg path {
     background-color: rgb(13, 17, 19);
 }
 
-.favorites .noFav {
+.favorites span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,12 +99,12 @@ nav button:hover svg path {
     margin-top: 25rem;
 }
 
-.favorites .noFav img {
+.favorites span img {
     width: 13.2rem;
     height: 12.5rem;
 }
 
-.favorites .noFav p {
+.favorites span p {
     color: #4E5455;
     font-weight: 700;
     font-size: 4.0rem;
@@ -148,6 +148,7 @@ table td {
     padding: 1.5rem;
     text-align: left;
     height: 12rem;
+    margin-left: 2rem;
 }
 
 td.user {
@@ -182,6 +183,9 @@ td .remove {
     border: none;
 
     color: #F75A68;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 160%;
 
     cursor: pointer;
 }

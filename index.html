@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
-    <nav>
-        <img src="./assets/logo.svg" alt="Logo GitFav" id="logo">
+    <div id="app">
 
-        <div class="search">
-            <form action="">
+        <nav>
+            <img src="./assets/logo.svg" alt="Logo GitFav" id="logo">
+    
+            <div class="search">
                 <input type="text" placeholder="Digite o Github username que quer favoritar">
                 <button>
                     <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,90 +26,37 @@
                     </svg>
                     <span>favoritar</span>
                 </button>
-            </form>
-        </div>
-    </nav>
-
-    <div class="favorites">
+            </div>
+        </nav>
+    
+        <div class="favorites">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usúario</th>
+                        <th>Repositórios</th>
+                        <th>Seguidores</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Usúario</th>
-                    <th>Repositórios</th>
-                    <th>Seguidores</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
+                <tbody></tbody>
+        
+                <tfoot>
+        
+                </tfoot>
+            </table>
     
-            <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
-                        <a href="https://github.com/maykbrito" target="_blank">
-                            <p>Mayk Brito</p>
-                            <span>/maykbrito</span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        76
-                    </td>
-                    <td class="followers">
-                        9589
-                    </td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
-                        <a href="https://github.com/maykbrito" target="_blank">
-                            <p>Mayk Brito</p>
-                            <span>/maykbrito</span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        76
-                    </td>
-                    <td class="followers">
-                        9589
-                    </td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
-                        <a href="https://github.com/maykbrito" target="_blank">
-                            <p>Mayk Brito</p>
-                            <span>/maykbrito</span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        76
-                    </td>
-                    <td class="followers">
-                        9589
-                    </td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
-            </tbody>
+            <span>
+                <img src="./assets/noFav.svg" alt="Estrela chocada">
+                <p>Nenhum favorito ainda</p>
+            </span>
     
-            <tfoot>
-    
-            </tfoot>
-        </table>
-
-        <span class="noFav hide">
-            <img src="./assets/noFav.svg" alt="Estrela chocada">
-            <p>Nenhum favorito ainda</p>
-        </span>
+        </div>
 
     </div>
 
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
