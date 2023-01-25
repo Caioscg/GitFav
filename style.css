@@ -92,6 +92,7 @@ nav button:hover svg path {
     background-color: rgb(13, 17, 19);
 
     overflow-y: scroll;
+    
     position: relative;
 }
 
@@ -150,7 +151,10 @@ table {
     position: absolute;
 }
 
-
+table thead {
+    position: sticky;
+    top: 0;
+}
 
 table th {
     text-align: left;
