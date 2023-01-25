@@ -83,14 +83,39 @@ nav button:hover svg path {
 
 .favorites {
     margin-top: 8.7rem;
-    min-height: 64.5rem;
+    height: 66.5rem;
     
     border: 1px solid #4A808C;
 
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
+    border-radius: 1.2rem;
 
     background-color: rgb(13, 17, 19);
+
+    overflow-y: scroll;
+    position: relative;
+}
+
+.favorites::-webkit-scrollbar {
+    background-color: #092D38;
+    width: 1.4rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+
+}
+
+.favorites::-webkit-scrollbar-track {
+    background-color: #071a1e;
+    border-bottom-right-radius: 1.2rem;
+    
+    margin-block-start: 6.2em;
+    margin-block-end: .1em;
+
+}
+
+.favorites::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 100vw;
+    border: .4rem solid #06181C;
 }
 
 .favorites .noFav {
@@ -122,28 +147,37 @@ table {
     width: 100%;
     border-collapse: collapse;
     
+    position: absolute;
 }
+
+
 
 table th {
     text-align: left;
     padding: 1.5rem 4rem;
     background: #092D38;
+    
 }
 
 table th:first-child {
     border-top-left-radius: 1.2rem;
 }
 
-table th:last-child {
+/* table th:last-child {
     border-top-right-radius: 1.2rem;
-}
+} */
 
 table tr {
     background: #06181C;
+    border-top: 1px solid #4A808C;
 }
 
 table tr:nth-child(odd) {  /* impares(odd) */
     background: #121518;
+}
+
+table tr:first-child {
+    border: 0;
 }
 
 table td {
@@ -165,6 +199,7 @@ td.user img {
 
     object-fit: cover;
     border-radius: 50%;
+    margin-left: 2rem;
 }
 
 td.user a {
