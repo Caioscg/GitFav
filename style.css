@@ -83,15 +83,17 @@ nav button:hover svg path {
 
 .favorites {
     margin-top: 8.7rem;
-    height: 67rem;
+    min-height: 64.5rem;
     
     border: 1px solid #4A808C;
-    border-radius: 1.2rem;
+
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
 
     background-color: rgb(13, 17, 19);
 }
 
-.favorites span {
+.favorites .noFav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,12 +101,12 @@ nav button:hover svg path {
     margin-top: 25rem;
 }
 
-.favorites span img {
+.favorites .noFav img {
     width: 13.2rem;
     height: 12.5rem;
 }
 
-.favorites span p {
+.favorites .noFav p {
     color: #4E5455;
     font-weight: 700;
     font-size: 4.0rem;
@@ -148,7 +150,7 @@ table td {
     padding: 1.5rem;
     text-align: left;
     height: 12rem;
-    margin-left: 2rem;
+    
 }
 
 td.user {

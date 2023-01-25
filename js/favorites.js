@@ -7,7 +7,6 @@ export class Favorites {
         this.root = document.querySelector(root) // this.root é o #app
         this.load()
         this.empty()
-
     }
 
     load() {
@@ -20,7 +19,7 @@ export class Favorites {
     }
 
     empty() {
-        const noUser = document.querySelector(".favorites span")
+        const noUser = document.querySelector(".noFav")
 
         if (this.entries.length === 0) {
             noUser.classList.remove('hide')
