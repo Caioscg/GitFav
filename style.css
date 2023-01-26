@@ -10,7 +10,7 @@
 
 body {
     background-color: black;
-    padding: 8.6rem 20rem 0;
+    padding: 8.6rem 30rem 0;
 
     font-family: 'Roboto', sans-serif;
 }
@@ -65,12 +65,16 @@ nav button {
     gap: .8rem;
     justify-content: center;
 
-    transition: all .3s;
+    transition: all .5s;
 }
 
 nav button:hover {
     background-color: white;
     color: #065E7C;
+}
+
+nav button span {
+    font-weight: bold;
 }
 
 svg path {
