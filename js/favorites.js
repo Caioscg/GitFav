@@ -23,11 +23,9 @@ export class Favorites {
 
         if (this.entries.length === 0) {
             noUser.classList.remove('hide')
-            console.log('1')
         }
         else {
             noUser.classList.add('hide')
-            console.log('2')
         }
 
     }
@@ -96,7 +94,7 @@ export class FavoritesView extends Favorites {
             row.querySelector('.user img').alt = `Imagem de ${user.name}`
             row.querySelector('.user a').href = `https://github.com/${user.login}`
             row.querySelector('.user p').textContent = user.name
-            row.querySelector('.user span').textContent = user.login
+            row.querySelector('.user span').textContent = `/${user.login}`
             row.querySelector('.repositories').textContent = user.public_repos
             row.querySelector('.followers').textContent = user.followers
 
@@ -143,3 +141,11 @@ export class FavoritesView extends Favorites {
             })
     }
 }
+
+const form = document.querySelector(".search")
+const input = document.querySelector('input')
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    input.value = ""
+})
